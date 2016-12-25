@@ -29,8 +29,9 @@ gem 'jbuilder', '~> 2.5'
 gem "heroku"
 gem "therubyracer"
 group :development, :test do
- gem "mysql2"
+ #gem "mysql2"
   gem 'taps'
+  gem 'sqlite3'
 end
 group :production do
   gem "pg"   #heroku supports only pg db
