@@ -26,7 +26,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "heroku"
+gem "therubyracer"
+group :development, :test do
+ # gem "mysql2"
+  gem 'taps'
+end
+group :production do
+  gem "pg"   #heroku supports only pg db
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
